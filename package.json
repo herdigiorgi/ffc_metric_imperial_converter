@@ -7,18 +7,18 @@
 	"description": "What am I about?",
 	"main": "server.js",
 	"scripts": {
+		"test": "./node_modules/mocha/bin/mocha --ui tdd tests",
 		"start": "node server.js"
 	},
 	"dependencies": {
-		"express": "^4.14.0",
-		"cors": "^2.8.1",
 		"body-parser": "^1.15.2",
 		"chai": "^3.5.0",
+		"chai-http": "^4.2.1",
+		"cors": "^2.8.1",
+		"express": "^4.14.0",
+		"helmet": "^3.15.1",
 		"mongodb": "^2.2.16",
-		"chai-http": "^3.0.0",
-		"mocha": "^3.2.0",
-		"zombie": "^5.0.5",
-		"helmet": "^3.1.0"
+		"zombie": "^6.1.4"
 	},
 	"engines": {
 		"node": "4.4.3"
@@ -32,5 +32,8 @@
 		"hyperdev",
 		"express"
 	],
-	"license": "MIT"
+	"license": "MIT",
+	"devDependencies": {
+		"mocha": "^5.2.0"
+	}
 }
